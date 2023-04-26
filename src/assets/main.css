@@ -1,0 +1,27 @@
+@import './base.css';
+
+#app {
+
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: #ff6726;
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    color: white;
+    background-color: #ff67267d;
+  }
+}
+
+
+  /* #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  } */
+
