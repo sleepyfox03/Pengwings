@@ -46,7 +46,7 @@ export default{
        <div class="container col-lg-6  table-responsive">
         <p><button id="addzoo" class="btn1 " @click='addzoo=!addzoo' hidden>add zoo</button>
        </p>
-        <table class="table table-light table-striped table-hover" id="mytable1">
+        <table class="table border table-light table-striped table-hover" id="mytable1">
           <thead>  <tr><th>Zoo ID</th>
                 <th>Zoo Name</th>
                 <th>State</th>
@@ -92,5 +92,11 @@ export default{
 </template>
 
 <style>
+.rcorners2 {
+  
+  border-radius: 25px;
+  border: 2px solid;
+  padding: 20px;
 
+}
 </style>
