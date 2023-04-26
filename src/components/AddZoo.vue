@@ -48,6 +48,7 @@ addzoo(){
            
         <button class="btn1 form-control" @click="addzoo()">Add</button>
         </div>
+
     </div>
     </div>
     
@@ -67,7 +68,7 @@ transition: 0.3s;
 }
 .rcorners2 {
   
-  border-radius: 25px;
+  border-radius:25px;
   border: 2px solid;
   padding: 20px;
 

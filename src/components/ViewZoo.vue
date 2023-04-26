@@ -14,7 +14,9 @@ export default{
             ZooData:null,
             editzoo:'',
             // a:true,
-            addzoo:'addzoo',
+            btntxt:'Close',
+            btntxt2:'AddZoo',
+            addzoo:'',
             value:null,
             form:{
                 zoo_id:'', 
@@ -42,10 +44,21 @@ export default{
 <template>
 <div class="row m-5">
         <br>
- 
+        <div class="col-lg-3">
+        <div v-if="addzoo" class=" btn1 round ">
+        <button id="addzoo" class="btnbg" @click='addzoo=!addzoo' > {{btntxt}} </button>
+        </div>
+        <div v-else="addzoo" class=" btn1 round ">
+        <button id="addzoo" class="btnbg" @click='addzoo=!addzoo' > {{btntxt2}} </button>
+        </div>
+        <br/>
+        <div v-if="addzoo" >
+            <AddZoo />
+        </div>
+ </div>
        <div class="container col-lg-6  table-responsive">
-        <p><button id="addzoo" class="btn1 " @click='addzoo=!addzoo' hidden>add zoo</button>
-       </p>
+       
+       
         <table class="table border table-light table-striped table-hover" id="mytable1">
           <thead>  <tr><th>Zoo ID</th>
                 <th>Zoo Name</th>
@@ -81,22 +94,38 @@ export default{
         </table>
 
         </div>
+        
+
+
         <div v-if="editzoo" class="col-lg-3">
             <EditZoo :values="value"/>
         </div>
-        <div v-else-if="addzoo" class="col-lg-3">
-            <AddZoo />
-        </div>
+       </div>
      
-</div>
+
 </template>
 
 <style>
-.rcorners2 {
-  
-  border-radius: 25px;
+.round {
+display: flex;
+justify-content: center;
+align-self: right;
+    /* font-size:30px ; */
+  /* font-weight: 100; */
+  border-radius:200px;
   border: 2px solid;
-  padding: 20px;
+  /* padding: 20px; */
+  /* width: 100px; */
+  height: 50px;
 
 }
+.btnbg{
+    margin-top: -0.2rem;
+    margin-left: -0.4rem;
+    background-color: transparent;
+    border-color: transparent;
+    width: 100%;
+    color: white;
+}
+
 </style>
