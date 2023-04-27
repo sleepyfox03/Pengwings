@@ -26,7 +26,8 @@ document.addEventListener("DOMContentLoaded", function(){
         <RouterLink to="/" class="links">Home</RouterLink>
         <RouterLink to="/about" >About</RouterLink>
         <RouterLink to="/dashboard" >Dashboard</RouterLink>
-        <RouterLink to="/login" >Login</RouterLink>
+        <RouterLink to="/login" >Sign in</RouterLink>
+        <RouterLink to="/signup" >Sign up</RouterLink>
      
       </nav>
     
@@ -101,14 +102,15 @@ nav a:first-of-type {
   }
 
 
-  .forgot-pass{
+  .blue-hyperlink{
     text-decoration: underline;
-    color: #0000EE;
+    /* color: #0000EE; */
     
 }
-.forgot-pass:hover{
+.blue-hyperlink:hover{
   text-decoration: underline;
-    color: #0000EE;
+    /* color: #0000EE; */
+    color: black;
     background-color: transparent;
 }
 

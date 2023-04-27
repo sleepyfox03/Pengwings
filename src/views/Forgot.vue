@@ -6,7 +6,7 @@
     <div class=" login mt-5">
     
     <h5>
-    So is is my headche that you Forgot?
+    So is it my headche that you Forgot?
     </h5></div>
     <div class="login">
     <img class="anger" src="../components/icons/anger.png">
