@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import DashboardView from '../views/DashboardView.vue'
-import ViewZoo from '../components/ViewZoo.vue'
+import Login from '../views/Login.vue'
+import Forgot from '../views/Forgot.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -24,9 +25,14 @@ const router = createRouter({
       component: DashboardView
     },
     {
-      path:'/viewzoo',
-      name:'viewzoo',
-      component: ViewZoo
+      path:'/login',
+      name:'login',
+      component: Login,
+    },
+    {
+      path:'/forgot',
+      name:'forgot',
+      component: Forgot,
     }
   ]
 })

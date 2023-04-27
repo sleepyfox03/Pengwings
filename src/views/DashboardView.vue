@@ -1,19 +1,25 @@
-<script setup>
+<script >
+
+
 import DashboardWidgets from '../components/DashboardWidgets.vue'
-import ViewZoo from '../components/ViewZoo.vue';
+export default{
+    components:{
+        DashboardWidgets:DashboardWidgets
+    }
+}
 
 </script>
 
 <template>
     <main>
+       
         <div>
-            <DashboardWidgets />
+            <DashboardWidgets/>
         </div>
-  
 
     </main>
 
 </template>
-<style scoped>
+<style >
 
 </style>

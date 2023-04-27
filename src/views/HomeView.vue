@@ -3,6 +3,7 @@
 </script>
 
 <template>
+
   <main>
     <div class="row zindex bg1">
         <div class="col gradient ">

@@ -1,27 +1,21 @@
 <script >
 import ViewZoo from './ViewZoo.vue';
-
+import ViewUser from './ViewUser.vue';
 
 export default{
+
  components:{
-    ViewZoo
+    ViewZoo,ViewUser,
  },
     data()
     {
         return {
             display:'',
+            user:'',
 
         }
     },
-    // methods()
-    // {
-    //     return{
 
-    //         displayComponents(){
-    //             this.display=true;
-    //         }
-    //     }
-    // }
     
     }
 </script>
@@ -34,7 +28,7 @@ export default{
         <div>
             <div class="row">
                 <div class="col-lg-3 col-md-3  col-6 p-5 m-3 bg  border">
-              <button id="viewuser_table" class="btn1 cen " >Users</button>
+              <button id="viewuser_table" class="btn1 cen " @click="user=!user">Users</button>
 
                 </div>
                 <div class="col-lg-3 col-md-3  col-6 p-5 m-3 bg  border">
@@ -52,6 +46,9 @@ export default{
     <div class="row">
         <div v-if="display">
             <ViewZoo />
+        </div>
+        <div v-if="user">
+            <ViewUser />
         </div>
     </div>
 </template>

@@ -37,6 +37,7 @@ export default{
         deletezoo(zoo){
             axios.post('http://localhost:8080/zoosite/myresource/deletezoodata',zoo)
             return alert("Deleted")
+            
         }
     }
 }
@@ -110,12 +111,10 @@ export default{
 display: flex;
 justify-content: center;
 align-self: right;
-    /* font-size:30px ; */
-  /* font-weight: 100; */
+ 
   border-radius:200px;
   border: 2px solid;
-  /* padding: 20px; */
-  /* width: 100px; */
+
   height: 50px;
 
 }
