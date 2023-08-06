@@ -1,8 +1,16 @@
 <script>    
     import RouterLink from '../router';
     export default{
-      name:'navbar'
-      
+      name:'navbar',
+      methods: {
+            async logoutUser() {
+              localStorage.removeItem('uname');
+              localStorage.removeItem('role');
+              localStorage.removeItem('user_id');
+              localStorage.setItem('statusLoggedIn','false');
+              this.$router.push({name:"login"});
+            }
+      }
     }
 document.addEventListener("DOMContentLoaded", function(){
   window.addEventListener('scroll', function() {
@@ -25,9 +33,9 @@ document.addEventListener("DOMContentLoaded", function(){
         
         <RouterLink to="/" class="links">Home</RouterLink>
         <RouterLink to="/about" >About</RouterLink>
-        <!-- <RouterLink to="/dashboard" >Dashboard</RouterLink> -->
-        <RouterLink to="/login" >Sign in</RouterLink>
-        <RouterLink to="/signup" >Sign up</RouterLink>
+        <RouterLink to="/dashboard" >Dashboard</RouterLink>
+        <RouterLink to="/login" @click="logoutUser()">Log out</RouterLink>
+        
      
       </nav>
     

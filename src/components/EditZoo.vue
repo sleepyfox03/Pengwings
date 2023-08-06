@@ -20,7 +20,7 @@ methods:{
 editzoo(){
   
         axios
-        .post('http://localhost:8080/zoosite/myresource/addzoodata',this.values)
+        .post('http://localhost:8080/zoosite/myresource/editzoodata',this.values)
     return alert("Success!")    
     }
     
@@ -34,8 +34,8 @@ mounted()
 }
 </script>
 <template>
-    <div>
-        <div><h3>Edit Zoo</h3></div>
+ <div class="  rcorners2 p-4">
+        <div><h3 style="color: #ff6726">Edit Zoo</h3></div>
     <div class="">
         <div class="form-group">
         <label>Zoo Name</label>
@@ -57,8 +57,8 @@ mounted()
         <input v-model="values.area" class="form-control" type="text">
         </div>
 
-        <div class="form-group">
-        <button class="btn1" @click="editzoo()">Update</button>
+        <div class="form-group mt-2">
+        <button class="btn1 form-control" @click="editzoo()">Update</button>
         </div>
     </div>
     </div>
@@ -76,5 +76,12 @@ border-color: #ff6726;
 background-color: #ff6726;
 color: whitesmoke;
 transition: 0.3s;
+}
+.rcorners2 {
+  
+  border-radius:25px;
+  border: 2px solid;
+  padding: 20px;
+
 }
 </style>

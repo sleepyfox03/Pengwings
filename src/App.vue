@@ -1,7 +1,11 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import Navbar from './components/Navbar.vue'
+import Navbarlog from './components/Navbarlog.vue';
 // import ViewZoo from './components/ViewZoo.vue';
+import { useRoute } from 'vue-router'
+
+let statusLogged  = localStorage.getItem('statusLoggedIn')
 
 </script>
 
@@ -11,7 +15,9 @@ import Navbar from './components/Navbar.vue'
   
   <header>
  
-      <Navbar />
+      <Navbar v-if="statusLogged != 'true'" />
+      <Navbarlog v-else />
+      
 
   </header>
 

@@ -57,7 +57,7 @@ export default{
             <AddUser />
         </div>
  </div>
-       <div class="container col-lg-6  table-responsive">
+       <div class="container rcorners2 col-lg-6  table-responsive">
        
        
         <table class="table border table-light table-striped table-hover" id="mytable1">
@@ -126,5 +126,11 @@ align-self: right;
     width: 100%;
     color: white;
 }
+.rcorners2 {
+  
+  border-radius:25px;
+  border: 2px solid;
+  padding: 20px;
 
+}
 </style>
