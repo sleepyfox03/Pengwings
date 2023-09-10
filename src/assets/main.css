@@ -17,7 +17,72 @@ a,
     background-color: #ff67267d;
   }
 }
-
+.hero-right-section-img{
+  height: 49rem;
+  width: 78rem;
+  border-radius: 2rem 0rem 0rem 2rem;
+  margin-top:50px;
+}
+.hero-text{
+  margin: 5rem;
+  font-size: 4rem;
+  font-weight:lighter;
+ 
+}
+.hero-title{
+  /* /* color:mediumseagreen; */
+  color:rgb(60, 116, 179); 
+  background:linear-gradient(to right, rgb(60, 116, 179), #fcad4d 70%)!important;
+	  -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text!important;
+    
+   font-weight: 1000;
+}
+.hero-paragraph{
+  font-size: 1.4rem;
+  margin:0 1rem 0  1rem;
+  text-align: justify!important;
+  text-justify:inter-word!important;
+}
+.flower-img{
+  width: 40rem;
+}
+.mission-paragraph{
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  line-height: 2.5rem;
+}
+.about-heading{
+  font-weight: bold;
+  font-size:3rem
+}
+.about-us-img{
+  margin:2rem;
+  height: 30rem;
+  width:30rem;
+  border-radius: 2rem;
+}
+label{
+  font-size: 1.3rem!important; 
+}
+.dashboard{
+  margin-top: 3rem;
+}
+.card{
+width: 18rem;
+border-radius: 2rem;
+border:2px solid;
+}
+.card:hover{
+  box-shadow: 12px 12px 2px 1px rgb(0, 0, 255, .2);
+  transition: .5s ease-in-out;
+}
+.dashboard-img{
+  height: 15rem;
+  border-radius: 3rem;
+  padding:1rem;
+}
 
   /* #app {
     display: grid;
