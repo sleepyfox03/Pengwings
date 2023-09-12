@@ -3,7 +3,8 @@
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Website Gallery
-###home page
+Home page
+<img src="src/components/icons/home.png"/>
 
 ## Recommended IDE Setup
 
