@@ -7,7 +7,7 @@
        <div class ="row">
           <div class="col-lg-4">
            <h2 class="hero-text">
-              Welcome to the <span class="hero-title">Lemon Society</span>
+              Welcome to the <span class="hero-title">Peng-Wings' Zoo</span>
            </h2>
            <p class="text-center font-weight-light hero-paragraph">
               With Over 2500 animals over 80 Acres.
@@ -30,7 +30,7 @@
           </div>
           <div class="col-lg-8 mt-2">
               <h2 class="red-colour text-center">Our Mission</h2>
-              <p class="mission-paragraph">Lemon Society provide more intensive care for animals than is possible in nature reserves or sanctuaries
+              <p class="mission-paragraph">Peng-Wings' Society provide more intensive care for animals than is possible in nature reserves or sanctuaries
                   We specialize in particular groups of animals, while others exhibit general collections 
                   Marine animals are often kept in separate establishments called aquariums.
                   The primary aim of a Lemon Society is to ensure that endangered species are maintained, researched and protected.
