@@ -3,14 +3,19 @@
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Website Gallery
-```Home page
+__Home page__
+This is the homepage of pengwings zoosite
 <img src="src/components/icons/home.png"/>
-this is the homepage
-```
 <img src="src/components/icons/home2.png"/>
+__Dashboard page__
+This is the dashboard of our website which provides 3 options to view users, zoos and animals in the zoo. These buttons will view the tables and then we can perform crud operation on that table
 <img src="src/components/icons/dash.png"/>
 <img src="src/components/icons/dashcrud.png"/>
+__Sign-in page__
+This is the login of pengwings zoosite
 <img src="src/components/icons/login.png"/>
+__Sign-up page__
+This is the homepage of pengwings zoosite. The first image shows when passwords do not match then it wont show the terms and conditions checkbox and wont proceed to login.
 <img src="src/components/icons/registernopass.png"/>
 <img src="src/components/icons/registerpass.png"/>
 
